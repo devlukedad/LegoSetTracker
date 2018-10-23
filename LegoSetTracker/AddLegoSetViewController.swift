@@ -10,6 +10,8 @@ import UIKit
 
 
 class AddLegoSetViewController: UIViewController, UITextFieldDelegate {
+    
+    // Luke, Jon, & Mike Kollen are cool
 
     @IBOutlet weak var setNameTextField: UITextField!
     @IBOutlet weak var setNumberTextField: UITextField!
