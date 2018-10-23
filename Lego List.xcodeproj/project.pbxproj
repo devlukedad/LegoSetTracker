@@ -7,23 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		20383754211937FA00C59B82 /* iu.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 20383753211937FA00C59B82 /* iu.jpeg */; };
 		2065CBD320E1DB520082F115 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2065CBD220E1DB520082F115 /* AppDelegate.swift */; };
-		2065CBD520E1DB520082F115 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2065CBD420E1DB520082F115 /* ViewController.swift */; };
+		2065CBD520E1DB520082F115 /* AddLegoSetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2065CBD420E1DB520082F115 /* AddLegoSetViewController.swift */; };
 		2065CBD820E1DB520082F115 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2065CBD620E1DB520082F115 /* Main.storyboard */; };
 		2065CBDB20E1DB520082F115 /* LegoSetTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2065CBD920E1DB520082F115 /* LegoSetTracker.xcdatamodeld */; };
 		2065CBDD20E1DB520082F115 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2065CBDC20E1DB520082F115 /* Assets.xcassets */; };
 		2065CBE020E1DB520082F115 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2065CBDE20E1DB520082F115 /* LaunchScreen.storyboard */; };
+		20A574822134DBE500076128 /* LegoSetsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A574812134DBE500076128 /* LegoSetsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2065CBCF20E1DB520082F115 /* LegoSetTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LegoSetTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		20383753211937FA00C59B82 /* iu.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = iu.jpeg; sourceTree = "<group>"; };
+		2065CBCF20E1DB520082F115 /* Lego List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lego List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2065CBD220E1DB520082F115 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2065CBD420E1DB520082F115 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2065CBD420E1DB520082F115 /* AddLegoSetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLegoSetViewController.swift; sourceTree = "<group>"; };
 		2065CBD720E1DB520082F115 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2065CBDA20E1DB520082F115 /* LegoSetTracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LegoSetTracker.xcdatamodel; sourceTree = "<group>"; };
 		2065CBDC20E1DB520082F115 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2065CBDF20E1DB520082F115 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2065CBE120E1DB520082F115 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20A574812134DBE500076128 /* LegoSetsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegoSetsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +52,7 @@
 		2065CBD020E1DB520082F115 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2065CBCF20E1DB520082F115 /* LegoSetTracker.app */,
+				2065CBCF20E1DB520082F115 /* Lego List.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,12 +61,14 @@
 			isa = PBXGroup;
 			children = (
 				2065CBD220E1DB520082F115 /* AppDelegate.swift */,
-				2065CBD420E1DB520082F115 /* ViewController.swift */,
+				2065CBD420E1DB520082F115 /* AddLegoSetViewController.swift */,
 				2065CBD620E1DB520082F115 /* Main.storyboard */,
 				2065CBDC20E1DB520082F115 /* Assets.xcassets */,
 				2065CBDE20E1DB520082F115 /* LaunchScreen.storyboard */,
 				2065CBE120E1DB520082F115 /* Info.plist */,
 				2065CBD920E1DB520082F115 /* LegoSetTracker.xcdatamodeld */,
+				20383753211937FA00C59B82 /* iu.jpeg */,
+				20A574812134DBE500076128 /* LegoSetsTableViewController.swift */,
 			);
 			path = LegoSetTracker;
 			sourceTree = "<group>";
@@ -70,9 +76,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2065CBCE20E1DB520082F115 /* LegoSetTracker */ = {
+		2065CBCE20E1DB520082F115 /* Lego List */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2065CBE420E1DB520082F115 /* Build configuration list for PBXNativeTarget "LegoSetTracker" */;
+			buildConfigurationList = 2065CBE420E1DB520082F115 /* Build configuration list for PBXNativeTarget "Lego List" */;
 			buildPhases = (
 				2065CBCB20E1DB520082F115 /* Sources */,
 				2065CBCC20E1DB520082F115 /* Frameworks */,
@@ -82,9 +88,9 @@
 			);
 			dependencies = (
 			);
-			name = LegoSetTracker;
+			name = "Lego List";
 			productName = LegoSetTracker;
-			productReference = 2065CBCF20E1DB520082F115 /* LegoSetTracker.app */;
+			productReference = 2065CBCF20E1DB520082F115 /* Lego List.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -103,7 +109,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2065CBCA20E1DB520082F115 /* Build configuration list for PBXProject "LegoSetTracker" */;
+			buildConfigurationList = 2065CBCA20E1DB520082F115 /* Build configuration list for PBXProject "Lego List" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -116,7 +122,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2065CBCE20E1DB520082F115 /* LegoSetTracker */,
+				2065CBCE20E1DB520082F115 /* Lego List */,
 			);
 		};
 /* End PBXProject section */
@@ -127,6 +133,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2065CBE020E1DB520082F115 /* LaunchScreen.storyboard in Resources */,
+				20383754211937FA00C59B82 /* iu.jpeg in Resources */,
 				2065CBDD20E1DB520082F115 /* Assets.xcassets in Resources */,
 				2065CBD820E1DB520082F115 /* Main.storyboard in Resources */,
 			);
@@ -139,9 +146,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2065CBD520E1DB520082F115 /* ViewController.swift in Sources */,
+				2065CBD520E1DB520082F115 /* AddLegoSetViewController.swift in Sources */,
 				2065CBDB20E1DB520082F115 /* LegoSetTracker.xcdatamodeld in Sources */,
 				2065CBD320E1DB520082F115 /* AppDelegate.swift in Sources */,
+				20A574822134DBE500076128 /* LegoSetsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,7 +290,7 @@
 				DEVELOPMENT_TEAM = 9U7TWGENK7;
 				INFOPLIST_FILE = LegoSetTracker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.lukekollen.projects.LegoSetTracker;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lukekollen.projects.LegoList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -297,7 +305,7 @@
 				DEVELOPMENT_TEAM = 9U7TWGENK7;
 				INFOPLIST_FILE = LegoSetTracker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.lukekollen.projects.LegoSetTracker;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lukekollen.projects.LegoList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -307,7 +315,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2065CBCA20E1DB520082F115 /* Build configuration list for PBXProject "LegoSetTracker" */ = {
+		2065CBCA20E1DB520082F115 /* Build configuration list for PBXProject "Lego List" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2065CBE220E1DB520082F115 /* Debug */,
@@ -316,7 +324,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2065CBE420E1DB520082F115 /* Build configuration list for PBXNativeTarget "LegoSetTracker" */ = {
+		2065CBE420E1DB520082F115 /* Build configuration list for PBXNativeTarget "Lego List" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2065CBE520E1DB520082F115 /* Debug */,
