@@ -8,18 +8,22 @@
 
 import UIKit
 
-//hello luke
 
-class AddLegoSetViewController: UIViewController, UITextFieldDelegate {
+class AddLegoSetViewController: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate {
 
+    @IBOutlet weak var UploadPhoto: UIButton!
     @IBOutlet weak var setNameTextField: UITextField!
     @IBOutlet weak var setNumberTextField: UITextField!
     @IBOutlet weak var pieceCountTextField: UITextField!
+    
+    let picker = UIImagePickerController()
+    
     
     @IBOutlet weak var imageView: UIImageView!
    
     override func viewDidLoad() {
         super.viewDidLoad()
+        //picker.delegate = self as! UIImagePickerControllerDelegate & UINavigationControllerDelegate
         imageView.image = UIImage(named: "Picture")
         pieceCountTextField.delegate = self
         setNumberTextField.delegate = self
@@ -33,6 +37,9 @@ class AddLegoSetViewController: UIViewController, UITextFieldDelegate {
         return allowedcharsset.isSuperset(of: typed)
     }
 
+    @IBAction func uploadTap(_ sender: Any) {
+ 
+    }
     @IBAction func cancelTap(_ sender: Any) {
         dismiss(animated: true, completion: nil)
        
@@ -43,18 +50,23 @@ class AddLegoSetViewController: UIViewController, UITextFieldDelegate {
         var setNumber = Int64(setNumberTextField.text!)
         var pieceCount = Int64(pieceCountTextField.text!)
         
+        if ((pieceCount) == nil) {
+            return
+        }
+        
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let context = appDelegate.persistentContainer.viewContext
         
         
         let legoSet = LegoSet(context: context)
         legoSet.legoSetId = UUID().uuidString
+        
         legoSet.pieceCount = Int32(pieceCount!)
         legoSet.setNumber = Int32(setNumber!)
         legoSet.setName = setName
         
         do {
-            try context.save()
+           try context.save()
         } catch let error {
             print("could not save because of \(error)")
         }
